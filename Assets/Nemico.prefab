@@ -136,8 +136,9 @@ GameObject:
   - component: {fileID: 5930571064922523653}
   - component: {fileID: 3025022882766815308}
   - component: {fileID: 7077986274010814881}
-  - component: {fileID: 5087767821992990499}
   - component: {fileID: 4303873829574001416}
+  - component: {fileID: 8772998118849826422}
+  - component: {fileID: 3202974885372333598}
   m_Layer: 0
   m_Name: Nemico
   m_TagString: Untagged
@@ -281,23 +282,6 @@ MonoBehaviour:
   team: 1
   hp: 100
   hpMax: 100
---- !u!114 &5087767821992990499
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000009836019894885}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e534b88a20be0040bcd3ddeff7230eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healingSpot: {fileID: 0}
-  eroe: {fileID: 0}
-  target: {fileID: 0}
-  navMeshAgent: {fileID: 0}
-  refreshDestinationRate: 0.2
 --- !u!195 &4303873829574001416
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -320,6 +304,60 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &8772998118849826422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000009836019894885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 151f11c5a59045f489feaccd90df44d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healingSpot: {fileID: 0}
+  eroe: {fileID: 0}
+--- !u!114 &3202974885372333598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000009836019894885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startWhenEnabled: 0
+  asynchronousLoad: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 0
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 0}
+  mBehaviorSource:
+    behaviorName: Behavior
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: 
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects: []
+        byteData: 
+        byteDataArray: 
+      Version: 
+  gizmoViewMode: 2
+  showBehaviorDesignerGizmo: 1
 --- !u!1 &5407046556814231051
 GameObject:
   m_ObjectHideFlags: 0

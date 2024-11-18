@@ -21,11 +21,9 @@ public class GameManager : MonoBehaviour
         GameObject enemyGO = Instantiate(enemyPrefab, spawnPoint.position,spawnPoint.rotation);
 
 
-        EnemyController enemyController = enemyGO.GetComponent<EnemyController>();
+        EnemyControllerBT enemyController = enemyGO.GetComponent<EnemyControllerBT>();
         enemyController.eroe = eroe;
         enemyController.healingSpot = healingSpot;
-        enemyController.target = eroe.gameObject.transform;
-
         enemyController.InitializeEnemyController();
 
     }
@@ -42,7 +40,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        InvokeRepeating(nameof(SpawnEnemyIfTheyAreNotTooMany), timeBetweenEnemiesSpawn, timeBetweenEnemiesSpawn);
+        InvokeRepeating(nameof(SpawnEnemyIfTheyAreNotTooMany), 0, timeBetweenEnemiesSpawn);
     }
     //
 }

@@ -8,9 +8,13 @@ public class EnemyControllerBT : MonoBehaviour
 {
     public HealingSpot healingSpot;
     public Character eroe;
+    public BehaviorTree behaviorTree;
 
     internal void InitializeEnemyController()
     {
-        GetComponent<BehaviorTree>().EnableBehavior();
+
+        behaviorTree= GetComponent<BehaviorTree>();
+      //  behaviorTree.SetVariableValue("Eroe",eroe.gameObject);
+        behaviorTree.EnableBehavior();
     }
 }

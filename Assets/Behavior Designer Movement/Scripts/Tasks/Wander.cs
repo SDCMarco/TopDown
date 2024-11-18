@@ -48,6 +48,10 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
                     TrySetTarget();
                 }
             }
+            else
+            {
+                TrySetTarget();
+            }
             return TaskStatus.Running;
         }
 

@@ -49,6 +49,8 @@ public class Character : MonoBehaviour
         GetHeldWeapon().EndShoot();
     }
 
+    
+
     public Weapon GetHeldWeapon()
     {
         return GetComponentInChildren<Weapon>();

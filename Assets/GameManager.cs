@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
         EnemyControllerBT enemyController = enemyGO.GetComponent<EnemyControllerBT>();
         enemyController.eroe = eroe;
         enemyController.healingSpot = healingSpot;
-        enemyController.InitializeEnemyController();
+        enemyController.InitializeEnemyController(healingSpot);
 
     }
 

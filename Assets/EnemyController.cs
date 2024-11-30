@@ -12,10 +12,6 @@ public class EnemyController : MonoBehaviour
     public NavMeshAgent navMeshAgent;
     public float refreshDestinationRate = 0.2f;
 
-    public Character GetCharacter()
-    {
-        return GetComponent<Character>();
-    }
 
     // Start is called before the first frame update
     void Start()
@@ -26,11 +22,7 @@ public class EnemyController : MonoBehaviour
 
     public void InitializeEnemyController()
     {
-        Character character = GetCharacter();
-        character.CharacterStartShoot();
-        character.OnCharacterDeath.AddListener(EnemyDeath);
-        character.OnHpChange.AddListener(EnemyChangeColorBasedOnHp);
-        character.OnHpChange.AddListener(DecideDestination);
+
 
         navMeshAgent = GetComponent<NavMeshAgent>();
 

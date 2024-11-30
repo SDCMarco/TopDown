@@ -7,7 +7,17 @@ public class HasLowLife : Conditional
 {
     public override TaskStatus OnUpdate()
     {
-        return TaskStatus.Success;
+        Character character = gameObject.GetComponent<Character>();
+        float hpRatio = character.hp / character.hpMax;
+        if (hpRatio >= 0.5f)
+        {
+            return TaskStatus.Failure;
+        }
+        else
+        {
+            return TaskStatus.Success;
+        }
+
     }
 
 }

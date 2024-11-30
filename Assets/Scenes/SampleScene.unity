@@ -2132,7 +2132,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1445497808}
   enemyPrefab: {fileID: 1000009836019894885, guid: 790c6178dfdb7ad4baa5ee9d3cb7fb6f, type: 3}
-  timeBetweenEnemiesSpawn: 1e+10
+  timeBetweenEnemiesSpawn: 2
   maxEnemiesAllowedOnTheMap: 10
   eroe: {fileID: 325389669}
   healingSpot: {fileID: 811730389}

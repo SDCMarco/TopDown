@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7985072923165098214}
   - component: {fileID: 3679417874313174569}
   - component: {fileID: 1837452658059152652}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Eroe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -186,7 +186,7 @@ GameObject:
   - component: {fileID: 2785519525011867407}
   - component: {fileID: 3144158741742815312}
   - component: {fileID: 8102912858777805422}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -280,7 +280,7 @@ GameObject:
   - component: {fileID: 8074830255996755554}
   - component: {fileID: 7045766270903205781}
   - component: {fileID: 8026665318819070548}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Arma
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -399,7 +399,7 @@ GameObject:
   m_Component:
   - component: {fileID: 631926730359572333}
   - component: {fileID: 5168599691841566283}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SpawnPointProiettile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
